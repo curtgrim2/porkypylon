@@ -1,0 +1,85 @@
+import { useState, useEffect } from 'react'
+import { Link } from "react-router-dom"
+import reactLogo from './assets/react.svg'
+import viteLogo from '/vite.svg'
+import './App.css'
+
+function App() {
+  const [count, setCount] = useState(0)
+
+  const allteams=[{name:"Arizona Cardinals",logo:""},
+  {name:"Atlanta Falcons",logo:""},
+  {name:"Baltimore Ravens",logo:""},
+  {name:"Buffalo Bills",logo:""},
+  {name:"Carolina Panthers",logo:""},
+  {name:"Chicago Bears",logo:""},
+  {name:"Cincinnati Bengals",logo:""},
+  {name:"Cleveland Browns",logo:""},
+  {name:"Dallas Cowboys",logo:""},
+  {name:"Denver Broncos",logo:""},
+  {name:"Detroit Lions",logo:""},
+  {name:"Green Bay Packers",logo:""},
+  {name:"Houston Texans",logo:""},
+  {name:"Indianapolis Colts",logo:""},
+  {name:"Jacksonville Jaguars",logo:""},
+  {name:"Kansas City Chiefs",logo:""},
+  {name:"Las Vegas Raiders",logo:""},
+  {name:"Los Angeles Chargers",logo:""},
+  {name:"Los Angeles Rams",logo:""},
+  {name:"Miami Dolphins",logo:""},
+  {name:"Minnesota Vikings",logo:""},
+  {name:"New England Patriots",logo:""},
+  {name:"New Orleans Saints",logo:""},
+  {name:"New York Giants",logo:""},
+  {name:"New York Jets",logo:""},
+  {name:"Philadelphia Eagles",logo:""},
+  {name:"Pittsburgh Steelers",logo:""},
+  {name:"San Francisco 49ers",logo:""},
+  {name:"Seattle Seahawks",logo:""},
+  {name:"Tampa Bay Buccaneers",logo:""},
+  {name:"Tennessee Titans",logo:""},
+  {name:"Washington Commanders",logo:""}
+  ];
+
+  function teamPage(){
+    return(
+      <div>
+        <div>Default Team</div>
+      <div id="headcoach">Default Head Coach</div>
+      </div>
+    );
+  }
+
+  return (
+    <div id="homepage">
+
+      <div style ={{display:"hidden"}}></div>
+     
+     {allteams.map((team)=> 
+     <div className="clicktheteam" 
+     key={team.name}
+     onClick={()=>teamPage(team)}
+     style={{cursor:"pointer"}}>
+      {team.name}
+      </div>)}
+    
+
+    </div>
+  )
+}
+
+export default App
+/* 
+ <div className="card">
+        <button onClick={() => setCount((count) => count + 1)}>
+          count is {count}
+        </button>
+
+      </div>
+
+<a style ={{display:"hidden"}} href="https://vite.dev" target="_blank">
+          <img src={viteLogo} className="logo" alt="Vite logo" />
+        </a>
+        <a style ={{visibility:"none"}} href="https://react.dev" target="_blank">
+          <img src={reactLogo} className="logo react" alt="React logo" />
+        </a> */

@@ -1,0 +1,22 @@
+
+body{
+display:block;
+background-color:purple;
+}
+#homepage{
+  background-color: rgb(152, 152, 250);
+  width:75vw;
+  height:75vh;
+  display:block;
+  overflow: scroll;
+}
+
+.clicktheteam{
+  background-color:white;
+  text-align:center;
+  margin:5px;
+  width:32%;
+  height:15%;
+  display:inline-block
+
+}
