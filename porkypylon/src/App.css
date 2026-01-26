@@ -1,7 +1,16 @@
 
 body{
-display:block;
 background-color:purple;
+}
+#root{
+width:100vw;
+height:100vh;
+}
+#websitename{
+background-color: white;
+text-align:center;
+width:50%;
+margin:0 auto 0 auto;
 }
 #homepage{
   background-color: rgb(152, 152, 250);
